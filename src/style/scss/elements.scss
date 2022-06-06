@@ -1,0 +1,47 @@
+body{
+    font-family:$primary-font!important;
+    background:$primary-color;
+    margin:0;
+    padding: 0!important;
+
+    overflow-y: scroll!important;
+}
+
+.img-fluid{
+    max-width: 100%;
+}
+
+.button-weekend{
+    border-radius:20px!important;
+    background:#fff!important;
+    color:#000!important;
+    text-transform: capitalize!important;
+    padding: 10px 77px!important;
+    border:1px solid #fff!important;
+}
+
+.button-white{
+    border-radius:20px!important;
+  
+    color:#fff!important;
+    text-transform: capitalize!important;
+    padding: 0px 56px !important;
+    border:1px solid #fff!important;
+}
+
+.dot {
+    height: 75px;
+    width: 75px;
+    background-color: #0B24FB;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .card-testi{
+    height:100%!important;
+    }
+
+    .card-media-weekend{
+        margin:0 20px;
+        border-radius:0!important;
+    }
