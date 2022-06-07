@@ -247,7 +247,7 @@
             background-repeat: no-repeat;
             background-position: 90% 0;
             @include lt-sm{
-                display:none;
+                background: none;
             }
         }
 

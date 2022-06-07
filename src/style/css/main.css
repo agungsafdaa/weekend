@@ -227,7 +227,7 @@ body {
       background-position: 90% 0; }
       @media screen and (max-width: 599px) {
         .black-area .pov .pattern {
-          display: none; } }
+          background: none; } }
 
 .footer-weekend {
   background: #0B24FB !important;
