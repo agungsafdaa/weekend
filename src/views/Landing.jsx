@@ -12,7 +12,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import SwiperCore, { Autoplay } from 'swiper';
-
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Card from '@mui/material/Card';
 
 import CardContent from '@mui/material/CardContent';
@@ -97,7 +97,9 @@ const Landing = () => {
             <div className="black-area">
                 <div className="testimonial-area">
                     <div className="heading">
+                       <Container maxWidth="md">
                         <h3>testimonial </h3>
+                        </Container>
                     </div>
                     <div className="people-testi">
                         <Container maxWidth="md">
@@ -173,10 +175,12 @@ const Landing = () => {
                                     <Card className="card-media-weekend" style={{background:`url(${item.image})`}}>
                                       
                                         <CardContent className="title-area">
-                                            <Typography gutterBottom variant="h5" component="div">
+                                            <h5>
                                                 {item.title}
-                                            </Typography>
-                                          
+                                            </h5>
+                                            <div className="circle">
+                                                <ArrowForwardIcon/>
+                                            </div>
                                         </CardContent>
 
                                     </Card>

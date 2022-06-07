@@ -47,6 +47,11 @@
     
     padding: 0px 0 50px 0;
 
+    @include lt-sm{
+        background-position: -490px -55px;
+        background-repeat: no-repeat;
+    }
+
     .welcome-text{
         padding:30px 0;
         text-align: center;
@@ -87,8 +92,13 @@
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 100px;
-
+    @include lt-sm{
+        background-size: 180px;
+    }
     .text{
+        @include lt-sm{
+            padding-top: 150px;
+        }
        p{
         font-weight:700;
         text-align: right;
@@ -124,12 +134,18 @@
     .testimonial-area{
         position: relative;
         top: -210px;
+        @include lt-sm{
+            top:-185px;
+        }
         .heading{
             h3{
                 color:#ffff;
                 font-size: 32px;
                 text-transform: capitalize;
                 line-height: 38px;
+                @include lt-sm{
+                    text-align: left;
+                }
             }
         }
         .people-testi{
@@ -158,6 +174,10 @@
         background-repeat: no-repeat;
         background-position: left;
         background-size: 225px;
+        @include lt-sm{
+            background-position: left bottom;
+            padding: 70px 0 365px 0;
+        }
     }
 
     .pov{
@@ -171,14 +191,20 @@
                 font-weight:bolder;
             }
         }
-        text-align:center;
+        @include lt-sm{
+            text-align:left;
+        }
+      
         color:#fff;
 
 
         .grid{
             display:grid;
             grid-template-columns: 33% 33% 33%;
-
+            @include lt-sm{
+                grid-template-columns: 100%;
+                grid-gap:15px;
+            }
             .card-media-weekend{
                 text-align:left;
                 background-size:cover!important;
@@ -189,7 +215,28 @@
                     background: #000000;
                     mix-blend-mode: normal;
                     opacity: 0.5;
+                    display:flex;
+                    align-items: center;
                     color:#fff;
+                    width: 100%;
+                    justify-content: space-between;
+                    h5{
+
+                    }
+                    .circle{
+                        border-radius:20px;
+                        background:#fff;
+                        color:#0B24FB;
+                        padding:10px;
+                        svg{
+                            @include lt-sm{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    @include lt-sm{
+                       font-size:14px;
+                    }
                 }
             }
 

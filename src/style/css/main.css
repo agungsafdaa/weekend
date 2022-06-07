@@ -30,6 +30,10 @@ body {
   background-color: #0B24FB;
   border-radius: 50%;
   display: inline-block; }
+  @media screen and (max-width: 599px) {
+    .dot {
+      position: relative;
+      left: 20px; } }
 
 .card-testi {
   height: 100% !important; }
@@ -73,6 +77,10 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 0px 0 50px 0; }
+  @media screen and (max-width: 599px) {
+    .hero-area {
+      background-position: -490px -55px;
+      background-repeat: no-repeat; } }
   .hero-area .welcome-text {
     padding: 30px 0;
     text-align: center; }
@@ -105,6 +113,12 @@ body {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 100px; }
+  @media screen and (max-width: 599px) {
+    .introduce {
+      background-size: 180px; } }
+  @media screen and (max-width: 599px) {
+    .introduce .text {
+      padding-top: 150px; } }
   .introduce .text p {
     font-weight: 700;
     text-align: right;
@@ -131,11 +145,17 @@ body {
   .black-area .testimonial-area {
     position: relative;
     top: -210px; }
+    @media screen and (max-width: 599px) {
+      .black-area .testimonial-area {
+        top: -185px; } }
     .black-area .testimonial-area .heading h3 {
       color: #ffff;
       font-size: 32px;
       text-transform: capitalize;
       line-height: 38px; }
+      @media screen and (max-width: 599px) {
+        .black-area .testimonial-area .heading h3 {
+          text-align: left; } }
     .black-area .testimonial-area .people-testi {
       text-align: left; }
       .black-area .testimonial-area .people-testi h5 {
@@ -152,9 +172,12 @@ body {
     background-repeat: no-repeat;
     background-position: left;
     background-size: 225px; }
+    @media screen and (max-width: 599px) {
+      .black-area .pov-bottom {
+        background-position: left bottom;
+        padding: 70px 0 365px 0; } }
   .black-area .pov {
     margin: 10% 0;
-    text-align: center;
     color: #fff; }
     .black-area .pov .heading h3 {
       color: #ffff;
@@ -162,9 +185,16 @@ body {
       text-transform: capitalize;
       line-height: 38px;
       font-weight: bolder; }
+    @media screen and (max-width: 599px) {
+      .black-area .pov {
+        text-align: left; } }
     .black-area .pov .grid {
       display: grid;
       grid-template-columns: 33% 33% 33%; }
+      @media screen and (max-width: 599px) {
+        .black-area .pov .grid {
+          grid-template-columns: 100%;
+          grid-gap: 15px; } }
       .black-area .pov .grid .card-media-weekend {
         text-align: left;
         background-size: cover !important;
@@ -175,7 +205,22 @@ body {
           background: #000000;
           mix-blend-mode: normal;
           opacity: 0.5;
-          color: #fff; }
+          display: flex;
+          align-items: center;
+          color: #fff;
+          width: 100%;
+          justify-content: space-between; }
+          .black-area .pov .grid .card-media-weekend .title-area .circle {
+            border-radius: 20px;
+            background: #fff;
+            color: #0B24FB;
+            padding: 10px; }
+            @media screen and (max-width: 599px) {
+              .black-area .pov .grid .card-media-weekend .title-area .circle svg {
+                font-size: 20px; } }
+          @media screen and (max-width: 599px) {
+            .black-area .pov .grid .card-media-weekend .title-area {
+              font-size: 14px; } }
     .black-area .pov .pattern {
       background: url("../../img/pattern.svg");
       background-repeat: no-repeat;
