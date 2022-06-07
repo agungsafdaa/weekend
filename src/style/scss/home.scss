@@ -246,6 +246,9 @@
             background: url('../../img/pattern.svg');
             background-repeat: no-repeat;
             background-position: 90% 0;
+            @include lt-sm{
+                display:none;
+            }
         }
 
        

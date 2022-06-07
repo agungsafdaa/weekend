@@ -225,6 +225,9 @@ body {
       background: url("../../img/pattern.svg");
       background-repeat: no-repeat;
       background-position: 90% 0; }
+      @media screen and (max-width: 599px) {
+        .black-area .pov .pattern {
+          display: none; } }
 
 .footer-weekend {
   background: #0B24FB !important;
